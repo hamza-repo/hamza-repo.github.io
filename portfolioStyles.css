@@ -1,0 +1,288 @@
+header {
+    background-color: #f0f3f5;
+    color: #000000;
+    padding: 1rem;
+    position: sticky;
+
+}
+
+nav {
+    display: inline-flex;
+}
+
+nav ul {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #01080a;
+}
+
+
+
+
+
+
+
+.theme-toggle {
+
+  display: inline-block;
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #000000, #2b2003);
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  box-shadow: -6px 8px 10px rgba(201, 106, 34, 0.1),0px 2px 2px rgba(204, 95, 12, 0.2);
+  transition: background-image 0.0s;
+  position: relative;
+  border-radius: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.theme-toggle:hover {
+    background-image: linear-gradient(to bottom, #d6bf9c, #c9ab84);
+}
+.dark-theme .theme-toggle:hover {
+    background-image: linear-gradient(to bottom, #c4b49f, #e7d2aa);
+    color: #000000;
+}
+
+.dark-theme .theme-toggle{
+    background-image: linear-gradient(to bottom, #ffffff, #dad7d1);
+    color: #000000;
+}
+
+
+section {
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #302c50;}
+    h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+#hero {
+    background: linear-gradient(135deg, #e9e9d2, #e7e6b8);
+    color: #000000;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.job, .project {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+.project a:hover {
+    text-decoration: underline;
+}
+
+.skill {
+    display: inline-flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    background: #ecf0f1;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill i {
+    margin-right: 0.5rem;
+    color: #3498db;
+}
+
+#contact p {
+    margin: 0.5rem 0;
+}
+
+#contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: none;
+    padding: 0.75rem 1rem;
+    background:#e7d2aa;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#back-to-top:hover {
+    background: #686c6e;
+}
+
+
+
+/* Dark Mode Styles */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme h1,.dark-theme h2,.dark-theme h3 {
+    color: antiquewhite !important;
+}
+.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+.dark-theme #hero {
+    background: linear-gradient(135deg, #212324, #2b1212)!important;
+    color: white !important;
+}
+
+
+.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+.dark-theme nav ul li  {
+    color: #ffffff;
+}
+.dark-theme nav ul li a {
+    color: #ffffff;
+}
+
+.dark-theme nav ul li a:hover {
+    color: #66b2ff;
+}
+
+.dark-theme .job, 
+.dark-theme .project,
+.dark-theme section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .btn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+
+.dark-theme #contact a {
+    color: #66b2ff;
+}
+.dark-theme .skill{
+    color: #000000;
+}
+
+
+@media (max-width: 1000px) {
+    nav {
+        display: block; /* Stack the nav content vertically */
+        text-align: center; /* Center-align items */
+    }
+
+    nav ul {
+        display: block; /* Stack the list items vertically */
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Reset transform */
+        padding: 0;
+        margin: 1rem 0; /* Add some spacing */
+    }
+
+    nav ul li {
+        display: block; /* Stack each li item */
+        margin: 0.5rem 0; /* Add spacing between items */
+    }
+
+    .theme-toggle {
+        display: block; /* Make the button full-width on small screens */
+        margin: 1rem auto; /* Center the button with margin */
+        width: 80%; /* Optional: Adjust width for better visibility */
+        padding: 0.75rem 1rem; /* Adjust padding for smaller screens */
+    }
+
+    header {
+        padding: 0.5rem; /* Reduce padding on small screens */
+    }
+}
